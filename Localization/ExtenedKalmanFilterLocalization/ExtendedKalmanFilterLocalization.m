@@ -74,7 +74,7 @@ for i=1 : nSteps
     % Observation
     [z,xTrue,xd,u]=Observation(xTrue, xd, u);
     
-    % ------ Kalman Filter --------
+    % ------ Extended Kalman Filter --------
     % Predict
     xPred = f(xEst, u);
     F=jacobF(xPred, u);
