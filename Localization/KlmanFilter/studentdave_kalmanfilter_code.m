@@ -53,7 +53,7 @@ for t = 0 : dt: duration
     plot(0:dt:t, Q_loc_meas, '-k.')
     axis([0 10 -30 80])
     hold on
-    pause
+%     pause
 end
 
 %plot theoretical path of ninja that doesn't use kalman
@@ -136,5 +136,5 @@ clf
     ylim=get(gca,'ylim');
     line([Q_loc(T);Q_loc(T)],ylim.','linewidth',2,'color','b');
     legend('state predicted','measurement','state estimate','actual Quail position')
-    pause
+%     pause
 end
